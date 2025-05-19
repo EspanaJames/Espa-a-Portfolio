@@ -19,24 +19,24 @@ function setActiveButton(buttonId) {
 
     // Set the clicked one as active
     const button = document.getElementById(buttonId);
-    button.classList.add('active');
+    if (button) button.classList.add('active');
 
-    // Clear the container
+    // Get containers
+    const buttonContainer = document.querySelector(".buttonContainer");
+    const contentContainer = document.querySelector(".container");
+
+    // Clear containers
     buttonContainer.innerHTML = "";
+    contentContainer.innerHTML = "";
 
-    // Show home projects only when home is active
+    // Show appropriate content based on buttonId
     if (buttonId === "homeButton") {
-        renderImportantProjects();
-    } else {
-        // You can load other content based on buttonId here
+        renderHome();
+    } else if (buttonId === "profileButton") {
+        renderProfile();
+    } else if (buttonId === "teamButton") {
+        renderTeam();
+    } else if (buttonId === "projectsButton") {
+        renderImportantProjects(); // Make sure this is defined in projects.js
     }
-}
-if (buttonId === "homeButton") {
-    renderImportantProjects();
-} else if (buttonId === "statsButton") {
-    // Show stats content
-} else if (buttonId === "profileButton") {
-    // Show profile content
-} else if (buttonId === "teamButton") {
-    // Show team content
 }

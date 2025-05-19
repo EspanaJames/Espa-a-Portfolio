@@ -1,4 +1,4 @@
-function renderImportantProjects() {
+function renderHome() {
     buttonContainer.innerHTML = ""; // Clear existing
 
     // Add responsive grid container
