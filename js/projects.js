@@ -68,7 +68,7 @@ function renderImportantProjects() {
             image: "https://via.placeholder.com/300x180text=App",
             description: "The project is a networking simulation of the UB Days event. There are three groups. The first group of devices is the wireless, the second group is the wired, and the last group is a mix of both. The goal is for all devices to communicate with the main server through the specified structure in the file.",
             github: "https://github.com/EspanaJames/networkFinals",
-            video: "https://www.youtube.com/embed/L96bQW98gBE?si=jzI5kVnrYgLDwoxZ" // Embed link
+            video: "https://www.youtube.com/embed/cP4p7nn2grw?si=sui_I_GFHl5G-yUW" // Embed link
         },
         {
             name: "NETWORKING ACTIVITY: one-to-one, one-to-many, many-to-many",
