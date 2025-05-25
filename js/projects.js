@@ -6,77 +6,87 @@ function renderImportantProjects() {
     displayContainer.innerHTML = "";
 
     const tags = [
-        { name: "WEB", icon: "fas fa-globe" },
-        { name: "APPLICATION", icon: "fas fa-desktop" },
-        { name: "HARDWARE", icon: "fas fa-microchip" },
+        { name: "ASSEMBLY", icon: "fas fa-globe" },
+        { name: "MACHINE VISION", icon: "fas fa-desktop" },
+        { name: "MICROPROCESSOR", icon: "fas fa-microchip" },
         { name: "HDL", icon: "fas fa-code" },
         { name: "NETWORKING", icon: "fas fa-network-wired" }
     ];
 
     const projects = [
         {
-            name: "Portfolio Website",
-            tag: "WEB",
+            name: "SUMOBOT/HOCKEYBOT",
+            tag: "MICROPROCESSOR",
             image: "https://via.placeholder.com/300x180?text=Portfolio",
-            description: "A personal responsive portfolio website built with HTML, CSS, and JavaScript.",
-            github: "https://github.com/yourusername/portfolio"
+            description: "We were tasked to showcase our bots during the last roboseum event. Here is the enjoyment that we went through with the technicalities uploaded. congrats to our team for reaching the finals!",
+            github: "https://github.com/EspanaJames/sumobot-and-hockeybot",
+            video: "https://www.youtube.com/embed/Vhf0IgsramA?si=SDGJib4H1lL5Ye3_" 
         },
         {
-            name: "Desktop App",
-            tag: "APPLICATION",
-            image: "https://via.placeholder.com/300x180?text=App",
-            description: "Cross-platform desktop application using Electron.",
-            github: "https://github.com/yourusername/desktop-app"
-        },
-        {
-            name: "FPGA Blinker",
+            name: "HDL FINALS: ELEVATOR SYSTEM",
             tag: "HDL",
-            image: "https://via.placeholder.com/300x180?text=HDL+Project",
-            description: "Simple blinking LED project using Verilog.",
-            github: "https://github.com/yourusername/fpga-blinker"
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "The project is a verilog simulation of a previous project we made last semester. The project is an elevator with a infrared and pressure sensor. The pressure sensor is meant to indicate that there is someone in the elevator and that the floors will now switch if the switches are manipulated. The infrared sensor is meant to indicate whether or not someone is in between the doors. This would determine if the doors are closeable/manipulateable or not. The verilog project has some modifications compared to the actual project. The clock is a new addition, since the actual project works instantly and does not have to rely on a clock. This was done by the student to help improve the logic and complexity of the functions, also to improve the way of simulating the results.",
+            github: "https://github.com/EspanaJames/verilog-FINAL-OUTPUT",
+            video: "https://www.youtube.com/embed/v4b-uLO-OE8?si=p1cKcVIGUPsjTBXG" // Embed link
         },
         {
-            name: "IoT Hardware Interface",
-            tag: "HARDWARE",
-            image: "https://via.placeholder.com/300x180?text=Hardware",
-            description: "Custom microcontroller interface project.",
-            github: "https://github.com/yourusername/hardware-interface"
+            name: "HDL ACTIVITY: JK-FLIPFLOP",
+            tag: "HDL",
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "The project is a verilog simulation of a JK flip flop. The JK flip flop is a type of flip flop that has two inputs, J and K, and one output, Q. The output Q will toggle between 0 and 1 based on the inputs J and K. If J is high and K is low, the output will be set to 1. If J is low and K is high, the output will be set to 0. If both J and K are high, the output will toggle between 0 and 1. This project was done by the student to help improve their understanding of flip flops and how they work in digital circuits.",
+            github: "https://github.com/EspanaJames/verilog-JK-FLIPFLOP",
+            video: "https://www.youtube.com/embed/mz5ofaYAkK0?si=qT22DGAm7wMx44tB" // Embed link
         },
         {
-            name: "Network Monitor",
+            name: "HDL ACTIVITY: T-FLIPFLOP",
+            tag: "HDL",
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "The project is a verilog simulation of a T flip flop. The T flip flop is a type of flip flop that has one input, T, and one output, Q. The output Q will toggle between 0 and 1 based on the input T. If T is high, the output will toggle between 0 and 1. If T is low, the output will remain the same. This project was done by the student to help improve their understanding of flip flops and how they work in digital circuits.",
+            github: "https://github.com/EspanaJames/verilog-T-FLIPFLOP",
+            video: "https://www.youtube.com/embed/v4tKgxZg_9U?si=FhSB5S6rYBm0GomG" // Embed link
+        },
+        {
+            name: "HDL ACTIVITY: 8bit Shift Register with a twist",
+            tag: "HDL",
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "The project is a verilog simulation of an 8-bit shift register. The shift register is a type of digital circuit that can store and shift data. It has 8 bits of storage and can shift the data left or right based on the input. This project has a unique feature where the data can be shifted left or right based on certain inputs.",
+            github: "https://github.com/EspanaJames/verilog-8SHIFTREG",
+            video: "https://www.youtube.com/embed/cK1-A3dnbwI?si=U-SgZlmqya2uFTBq" // Embed link
+        },
+        {
+            name: "HDL ACTIVITY: 4bit counter with a twist",
+            tag: "HDL",
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "The project is a verilog simulation of a 4bit counter with a twist. The counter is a type of digital circuit that can count from 0 to 15. It has a unique feature where the counter can count by 2 and can also be set to count when there is a positive or negative edge of the clock signal. I made a mistake with the edit, that is supposed to say 4bit counter with a twist. The twist is that the counter can count by 2 and can also be set to count when there is a positive or negative edge of the clock signal.",
+            github: "https://github.com/EspanaJames/verilog-4BIT-COUNTER",
+            video: "https://www.youtube.com/embed/NT10ZsGp3Do?si=11ccf533n0XXPOUv" // Embed link
+        },
+        {
+            name: "NETWORKING FINALS: UB DAYS NETWORK SIMULATION",
             tag: "NETWORKING",
-            image: "https://via.placeholder.com/300x180?text=Networking",
-            description: "Real-time network traffic visualizer.",
-            github: "https://github.com/yourusername/network-monitor"
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "The project is a networking simulation of the UB Days event. There are three groups. The first group of devices is the wireless, the second group is the wired, and the last group is a mix of both. The goal is for all devices to communicate with the main server through the specified structure in the file.",
+            github: "https://github.com/EspanaJames/networkFinals",
+            video: "https://www.youtube.com/embed/L96bQW98gBE?si=jzI5kVnrYgLDwoxZ" // Embed link
         },
         {
-            name: "Web Chat App",
-            tag: "WEB",
-            image: "https://via.placeholder.com/300x180?text=Chat+App",
-            description: "A real-time web chat app using WebSockets.",
-            github: "https://github.com/yourusername/web-chat-app"
-        },
-        {
-            name: "Sensor Logger",
-            tag: "HARDWARE",
-            image: "https://via.placeholder.com/300x180?text=Sensor+Logger",
-            description: "Logs sensor data over serial to SD card.",
-            github: "https://github.com/yourusername/sensor-logger"
-        },
-        {
-            name: "Router Emulator",
+            name: "NETWORKING ACTIVITY: one-to-one, one-to-many, many-to-many",
             tag: "NETWORKING",
-            image: "https://via.placeholder.com/300x180?text=Router+Sim",
-            description: "Software-defined networking simulator.",
-            github: "https://github.com/yourusername/router-emulator"
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "The project is a networking simulation of three different connection types. The first connection is a peer-to-peer connection or one-to-one connection. The second connection is a one-to-many connection. The third connection is a many-to-many connection. The goal is to simulate the different types of connections and how they work in a network.",
+            github: "https://github.com/EspanaJames/networkActivity",
+            video: "https://www.youtube.com/embed/Rn0BlB0lvIc?si=1yi_svbxFsuOfSsz" // Embed link
         },
         {
-            name: "Application Dashboard",
-            tag: "APPLICATION",
-            image: "https://via.placeholder.com/300x180?text=Dashboard",
-            description: "Modern desktop dashboard UI.",
-            github: "https://github.com/yourusername/app-dashboard"
-        }
+            name: "MACHINE VISION: FACE DETECTION ATTENDANCE SYSTEM",
+            tag: "MACHINE VISION",
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "The project is a face detection attendance system. The system uses a camera to detect faces and mark attendance based on the detected faces. The system can also recognize faces and mark attendance based on the recognized faces. The project was done by the student to help improve their understanding of machine vision and how it can be used in real-world applications.",
+            github: "https://github.com/EspanaJames/machineVisionFinals",
+            video: "https://www.youtube.com/embed/TvoDMYG23h4?si=qqkZ8rXrH_HKBsbf" // Embed link
+        },
+        
     ];
 
     // Create tag buttons
@@ -103,7 +113,7 @@ function renderImportantProjects() {
             img.src = project.image;
             img.alt = project.name;
             img.className = "project-img";
-            img.addEventListener("click", () => openModal(project));
+            img.addEventListener("click", () => renderProjectDetails(project));
 
             card.appendChild(img);
             grid.appendChild(card);
@@ -112,36 +122,45 @@ function renderImportantProjects() {
         displayContainer.appendChild(grid);
     }
 
-    function openModal(project) {
-        const modalOverlay = document.createElement("div");
-        modalOverlay.className = "modal-overlay";
+    function renderProjectDetails(project) {
+    displayContainer.innerHTML = "";
 
-        const modal = document.createElement("div");
-        modal.className = "modal";
+    const detail = document.createElement("div");
+    detail.className = "project-detail";
 
-        const closeBtn = document.createElement("span");
-        closeBtn.innerHTML = "&times;";
-        closeBtn.className = "modal-close";
-        closeBtn.addEventListener("click", () => document.body.removeChild(modalOverlay));
+    const backBtn = document.createElement("button");
+    backBtn.textContent = "← Back to Projects";
+    backBtn.className = "back-button";
+    backBtn.addEventListener("click", () => renderProjects(project.tag));
 
-        const img = document.createElement("img");
-        img.src = project.image;
-        img.className = "modal-image";
+    const title = document.createElement("h2");
+    title.textContent = project.name;
 
-        const title = document.createElement("h3");
-        title.textContent = project.name;
+    const desc = document.createElement("p");
+    desc.textContent = project.description;
 
-        const desc = document.createElement("p");
-        desc.textContent = project.description;
+    const videoContainer = document.createElement("div");
+    videoContainer.className = "video-container";
 
-        const link = document.createElement("a");
-        link.href = project.github;
-        link.target = "_blank";
-        link.textContent = "View on GitHub";
-        link.className = "modal-link";
+    const video = document.createElement("iframe");
+    video.width = "560";
+    video.height = "315";
+    video.src = project.video || "https://www.youtube.com/embed/dQw4w9WgXcQ";
+    video.title = "Project Demo";
+    video.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    video.allowFullscreen = true;
 
-        modal.append(closeBtn, img, title, desc, link);
-        modalOverlay.appendChild(modal);
-        document.body.appendChild(modalOverlay);
-    }
+    const link = document.createElement("a");
+    link.href = project.github;
+    link.target = "_blank";
+    link.textContent = "View on GitHub";
+    link.className = "github-link";
+
+    videoContainer.append(video, link);
+    detail.append(backBtn, title, desc, videoContainer);
+    displayContainer.appendChild(detail);
+
+}
+
+
 }

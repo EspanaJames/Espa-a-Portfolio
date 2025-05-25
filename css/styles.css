@@ -276,7 +276,7 @@ body > *:not(header, footer) {
     position: relative;
     background-color: #1e1e1e;
     border-radius: 12px;
-    box-shadow: inset 2px 2px 10px rgba(163, 160, 160, 0.8),
+    box-shadow: inset 2px 2px 10px rgba(8, 8, 8, 0.8),
                 inset -2px -2px 10px rgba(241, 241, 241, 0.05),
                 0 0 10px rgba(249, 248, 248, 0.2); /* Soft glow */
     overflow: hidden;
@@ -536,3 +536,24 @@ body > *:not(header, footer) {
   line-height: 1.4;
 }
 
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.github-link {
+    margin-top: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: #555;
+}
