@@ -86,6 +86,14 @@ function renderImportantProjects() {
             github: "https://github.com/EspanaJames/machineVisionFinals",
             video: "https://www.youtube.com/embed/TvoDMYG23h4?si=qqkZ8rXrH_HKBsbf" // Embed link
         },
+        {
+            name: "ASSEMBLY ADVENTURES: DISKPLAY PROJECT",
+            tag: "ASSEMBLY",
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "The project is a disk display that can hold up to 10kgs. This disk display is coded in assembly language and consists of buttons, sensors, and a servo motor. This was intended to be an extension of the robot arm but was not completed. In an attempt to create a product that meets the requirements of the project, this was constructed.",
+            github: "https://github.com/EspanaJames/assembly_DISKPLAY",
+            video: "https://www.youtube.com/embed/PRM6JLHzXI8?si=0uTiOejalgQBpiMM" // Embed link
+        },
         
     ];
 
