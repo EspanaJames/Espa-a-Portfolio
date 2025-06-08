@@ -94,7 +94,14 @@ function renderImportantProjects() {
             github: "https://github.com/EspanaJames/assembly_DISKPLAY",
             video: "https://www.youtube.com/embed/PRM6JLHzXI8?si=0uTiOejalgQBpiMM" // Embed link
         },
-        
+        {
+            name: "MIDTERM ASSEMBLY PROJECT: DISKPLAY",
+            tag: "ASSEMBLY",
+            image: "https://via.placeholder.com/300x180text=App",
+            description: "This is the midterm project for the assembly subject. This is a pre-evaluation of the disk display project. In the midterms, we were tasked to analyze our components and let them function individually. The project consisted of a servo motor, arduino nano, wires, buttons, an LED, and an infrared sensor. The project was done by the student to help improve their understanding of assembly language and how it can be used in real-world applications.",
+            github: "https://github.com/EspanaJames/assembly_MIDTERMS",
+            video: "https://www.youtube.com/embed/ZlzmDXuW7wU?si=NtfYDAP6Xg9kTI2p" // Embed link
+        },
     ];
 
     // Create tag buttons
